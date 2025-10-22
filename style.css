@@ -1,0 +1,90 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container */
+.todo-container {
+  background: white;
+  width: 90%;
+  max-width: 400px;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #0077ff;
+  margin-bottom: 1.5rem;
+}
+
+/* Input area */
+.input-section {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+#taskInput {
+  flex: 1;
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+#addBtn {
+  padding: 0.7rem 1.2rem;
+  background: #0077ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#addBtn:hover {
+  background: #005fcc;
+}
+
+/* Task list */
+ul {
+  list-style: none;
+}
+
+li {
+  background: #f8f9fa;
+  margin-bottom: 0.6rem;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li.completed {
+  text-decoration: line-through;
+  color: #888;
+  background: #e0e0e0;
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  color: red;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+}
